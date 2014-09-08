@@ -1,7 +1,9 @@
 class packages {
   package {[
-      'rubygems',
-      'libsqlite3-dev'
+      'build-essential',
+      'libsqlite3-dev',
+      'ruby1.9.1-dev',
+      'rubygems'
     ]:
     ensure => present
   }
