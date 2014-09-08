@@ -20,8 +20,7 @@ class mailcatcher_supervisor {
 class mailcatcher {
   include mailcatcher_supervisor
 
-  exec { 'bash -l -c "gem install mailcatcher"':
-    path => ['/usr/bin'],
+  exec { '/bin/bash -l -c "gem install mailcatcher"':
     timeout => 0
   }
 }
