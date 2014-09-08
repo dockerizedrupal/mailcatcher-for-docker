@@ -1,6 +1,7 @@
 class packages {
   package {[
     'build-essential',
+    'g++',
     'libsqlite3-dev',
     'ruby1.9.1-dev'
   ]:
