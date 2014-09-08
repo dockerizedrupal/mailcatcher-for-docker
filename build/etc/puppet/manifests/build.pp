@@ -1,8 +1,7 @@
 class packages {
   package {[
-      'build-essential',
-      'libsqlite3-dev',
-      'ruby1.9.1-dev'
+      'rubygems ',
+      'libsqlite3-dev'
     ]:
     ensure => present
   }
@@ -18,10 +17,10 @@ class mailcatcher_supervisor {
 class mailcatcher {
   include mailcatcher_supervisor
 
-#  exec { 'gem install mailcatcher':
-#    path => ['/usr/bin'],
-#    timeout => 0
-#  }
+  exec { 'gem install mailcatcher':
+    path => ['/usr/bin'],
+    timeout => 0
+  }
 }
 
 node default {
