@@ -13,4 +13,4 @@ Run the container
 Build the image yourself
 ------------------------
 
-    sudo docker build -t mailcatcher http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git
+    sudo docker build -t simpledrupalcloud/mailcatcher http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git
