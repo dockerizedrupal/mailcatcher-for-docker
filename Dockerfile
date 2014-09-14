@@ -1,4 +1,4 @@
-FROM simpledrupalcloud/base-image
+FROM simpledrupalcloud/base
 
 MAINTAINER Simple Drupal Cloud <support@simpledrupalcloud.com>
 
@@ -11,6 +11,6 @@ RUN /tmp/build/build.sh
 RUN rm -rf /tmp/*
 
 EXPOSE 1080
-EXPOSE 1025
+EXPOSE 25
 
 ENTRYPOINT ["/run.sh"]
