@@ -13,9 +13,9 @@ Run the container
 Build the image
 ---------------
 
-  TMP=$(mktemp -d) \
-    && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
-    && cd "${TMP}" \
-    && git checkout 0.5.12 \
-    && sudo docker build -t simpledrupalcloud/mailcatcher:0.5.12 . \
-    && cd -
+    TMP=$(mktemp -d) \
+      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
+      && cd "${TMP}" \
+      && git checkout 0.5.12 \
+      && sudo docker build -t simpledrupalcloud/mailcatcher:0.5.12 . \
+      && cd -
