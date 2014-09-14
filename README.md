@@ -4,11 +4,11 @@ docker-mailcatcher-0.5.12
 Run the container
 -----------------
 
-    sudo docker run \
-      --name mailcatcher \
-      --net host \
+    CONTAINER=mailcatcher && sudo docker run \
+      --name "${CONTAINER}" \
+      -h "${CONTAINER}" \
       -d \
-      simpledrupalcloud/mailcatcher
+      simpledrupalcloud/mailcatcher:0.5.12
 
 Build the image
 ---------------
