@@ -11,6 +11,6 @@ RUN /tmp/build/build.sh
 RUN rm -rf /tmp/*
 
 EXPOSE 1080
-EXPOSE 25
+EXPOSE 1025
 
 ENTRYPOINT ["/run.sh"]
