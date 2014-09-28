@@ -1,8 +1,6 @@
-docker-mailcatcher
-==================
+# docker-mailcatcher
 
-MailCatcher 0.5.12
-------------------
+## MailCatcher 0.5.12
 
 ### Run the container
 
