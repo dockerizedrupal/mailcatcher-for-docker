@@ -4,11 +4,11 @@
 
 ### Run the container
 
-    CONTAINER=mailcatcher && sudo docker run \
+    CONTAINER="mailcatcher" && sudo docker run \
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
-      -p 80:80 \
-      -p 25:25 \
+      -p 1080:1080 \
+      -p 1025:1025 \
       -d \
       simpledrupalcloud/mailcatcher:0.5.12
 
