@@ -1,6 +1,6 @@
 # docker-mailcatcher
 
-## MailCatcher 0.5.12 (Branch 0.5.12)
+## MailCatcher 0.5.12 (branch 0.5.12)
 
 ## Fig
 
@@ -29,7 +29,7 @@
       && sudo docker build -t simpledrupalcloud/mailcatcher:0.5.12 . \
       && cd -
 
-## MailCatcher 0.5.12 (Branch 0.5.12-dev)
+## MailCatcher 0.5.12 (branch 0.5.12-dev)
 
 ## Fig
 
