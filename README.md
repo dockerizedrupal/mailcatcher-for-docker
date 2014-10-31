@@ -20,6 +20,7 @@
       -d \
       simpledrupalcloud/mailcatcher:0.5.12
 
+
 ### Build the image
 
     TMP="$(mktemp -d)" \
