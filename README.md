@@ -10,7 +10,7 @@
 
 ## Run the container
 
-    CONTAINER="mailcatcher-dev" && sudo docker run \
+    CONTAINER="mailcatcher" && sudo docker run \
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -p 1080:1080 \
