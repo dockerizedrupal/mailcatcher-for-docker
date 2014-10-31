@@ -1,0 +1,6 @@
+mailcatcher-dev
+  image: simpledrupalcloud/mailcatcher:0.5.12-dev
+  hostname: mailcatcher-dev
+  ports:
+    - "1080:1080"
+    - "1025:1025"
