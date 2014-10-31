@@ -1,8 +1,8 @@
 # docker-mailcatcher
 
-## MailCatcher 0.5.12 (branch 0.5.12)
+## Branch 0.5.12
 
-## Fig
+### Fig
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
@@ -29,9 +29,9 @@
       && sudo docker build -t simpledrupalcloud/mailcatcher:0.5.12 . \
       && cd -
 
-## MailCatcher 0.5.12 (branch 0.5.12-dev)
+## Branch 0.5.12-dev)
 
-## Fig
+### Fig
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
