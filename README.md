@@ -4,7 +4,7 @@ A [Docker](https://docker.com/) container for [MailCatcher](http://mailcatcher.m
 
 ## MailCatcher 0.5.12
 
-### Stable release
+### STABLE RELEASE
 
 #### Run the container
 
@@ -35,7 +35,7 @@ Using the `fig` command
       && sudo docker build -t simpledrupalcloud/mailcatcher:0.5.12 . \
       && cd -
 
-### Development release
+### DEVELOPMENT RELEASE
 
 #### Run the container
 
