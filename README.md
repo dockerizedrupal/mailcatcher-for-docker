@@ -1,5 +1,7 @@
 # docker-mailcatcher-0.5.12
 
+A Docker container for [MailCatcher](http://mailcatcher.me/)
+
 ## Run the container
 
 Using the `docker` command:
