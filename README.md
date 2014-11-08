@@ -57,3 +57,7 @@
       && git checkout 0.5.12-dev \
       && sudo docker build -t simpledrupalcloud/mailcatcher:0.5.12-dev . \
       && cd -
+
+## License
+
+**MIT**
