@@ -2,15 +2,9 @@
 
 ## Branch 0.5.12
 
-### Fig
+## Run the container
 
-    TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
-      && cd "${TMP}" \
-      && git checkout 0.5.12 \
-      && fig up
-
-### Run the container
+Using the `docker` command:
 
     CONTAINER="mailcatcher" && sudo docker run \
       --name "${CONTAINER}" \
@@ -19,6 +13,14 @@
       -p 1025:1025 \
       -d \
       simpledrupalcloud/mailcatcher:0.5.12
+      
+Using the `fig` command
+
+    TMP="$(mktemp -d)" \
+      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
+      && cd "${TMP}" \
+      && git checkout 0.5.12 \
+      && fig up
 
 ### Build the image
 
@@ -31,15 +33,9 @@
 
 ## Branch 0.5.12-dev)
 
-### Fig
+## Run the container
 
-    TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
-      && cd "${TMP}" \
-      && git checkout 0.5.12-dev \
-      && fig up
-
-### Run the container
+Using the `docker` command:
 
     CONTAINER="mailcatcher" && sudo docker run \
       --name "${CONTAINER}" \
@@ -48,6 +44,14 @@
       -p 1025:1025 \
       -d \
       simpledrupalcloud/mailcatcher:0.5.12-dev
+      
+Using the `fig` command
+
+    TMP="$(mktemp -d)" \
+      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
+      && cd "${TMP}" \
+      && git checkout 0.5.12-dev \
+      && fig up
 
 ### Build the image
 
