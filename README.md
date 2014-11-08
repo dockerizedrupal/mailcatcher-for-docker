@@ -1,8 +1,11 @@
 # docker-mailcatcher
 
-## Branch 0.5.12
 
-### Run the container
+## MailCatcher 0.5.12
+
+### Stable release
+
+#### Run the container
 
 Using the `docker` command:
 
@@ -22,7 +25,7 @@ Using the `fig` command
       && git checkout 0.5.12 \
       && fig up
 
-### Build the image
+#### Build the image
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
@@ -31,9 +34,9 @@ Using the `fig` command
       && sudo docker build -t simpledrupalcloud/mailcatcher:0.5.12 . \
       && cd -
 
-## Branch 0.5.12-dev)
+### Development release
 
-### Run the container
+#### Run the container
 
 Using the `docker` command:
 
@@ -53,7 +56,7 @@ Using the `fig` command
       && git checkout 0.5.12-dev \
       && fig up
 
-### Build the image
+#### Build the image
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
