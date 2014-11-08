@@ -2,7 +2,7 @@
 
 ## Branch 0.5.12
 
-## Run the container
+### Run the container
 
 Using the `docker` command:
 
@@ -33,7 +33,7 @@ Using the `fig` command
 
 ## Branch 0.5.12-dev)
 
-## Run the container
+### Run the container
 
 Using the `docker` command:
 
