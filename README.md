@@ -1,6 +1,6 @@
 # docker-mailcatcher
 
-A Docker container for [MailCatcher](http://mailcatcher.me/)
+A [Docker](https://docker.com/) container for [MailCatcher](http://mailcatcher.me/) container for [MailCatcher](http://mailcatcher.me/)
 
 ## MailCatcher 0.5.12
 
