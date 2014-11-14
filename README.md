@@ -2,7 +2,7 @@
 
 A [Docker](https://docker.com/) container for [MailCatcher](http://mailcatcher.me/).
 
-## MailCatcher 0.5.12
+## MailCatcher 0.5.12 (DEVELOPMENT BRANCH)
 
 ### Run the container
 
