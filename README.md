@@ -2,7 +2,7 @@
 
 A [Docker](https://docker.com/) container for [MailCatcher](http://mailcatcher.me/).
 
-## MailCatcher (STABLE BRANCH)
+## MailCatcher (DEVELOPMENT BRANCH)
 
 ### Run the container
 
@@ -14,13 +14,14 @@ Using the `docker` command:
       -p 1080:1080 \
       -p 1025:1025 \
       -d \
-      simpledrupalcloud/mailcatcher:latest
+      simpledrupalcloud/mailcatcher:dev
       
 Using the `fig` command
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
       && cd "${TMP}" \
+      && git checkout dev \
       && fig up
 
 ### Build the image
@@ -28,7 +29,8 @@ Using the `fig` command
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
       && cd "${TMP}" \
-      && sudo docker build -t simpledrupalcloud/mailcatcher:latest . \
+      && git checkout dev \
+      && sudo docker build -t simpledrupalcloud/mailcatcher:dev . \
       && cd -
 
 ## License
