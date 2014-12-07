@@ -19,4 +19,4 @@ RUN apt-get clean
 EXPOSE 1080
 EXPOSE 1025
 
-ENTRYPOINT ["/src/run.sh"]
+CMD ["/src/run.sh"]
