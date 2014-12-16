@@ -2,9 +2,7 @@
 
 A [Docker](https://docker.com/) container for [MailCatcher](http://mailcatcher.me/).
 
-## MailCatcher (STABLE BRANCH)
-
-### Run the container
+## Run the container
 
 Using the `docker` command:
 
@@ -23,7 +21,7 @@ Using the `fig` command
       && cd "${TMP}" \
       && sudo fig up
 
-### Build the image
+## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
