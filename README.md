@@ -9,8 +9,8 @@ Using the `docker` command:
     CONTAINER="mailcatcher" && sudo docker run \
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
-      -p 1080:1080 \
-      -p 1025:1025 \
+      -p 80:80 \
+      -p 25:25 \
       -d \
       simpledrupalcloud/mailcatcher:latest
       
