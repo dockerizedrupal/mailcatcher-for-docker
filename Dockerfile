@@ -9,7 +9,7 @@ ADD ./src /src
 
 RUN apt-get update && /src/build.sh && /src/clean.sh
 
-EXPOSE 80
-EXPOSE 25
+EXPOSE 1080
+EXPOSE 1025
 
 CMD ["/src/run.sh"]

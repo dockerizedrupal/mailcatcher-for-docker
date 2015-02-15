@@ -9,8 +9,8 @@ Using the `docker` command:
     CONTAINER="mailcatcher" && sudo docker run \
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
-      -p 80:80 \
-      -p 25:25 \
+      -p 1080:1080 \
+      -p 1025:1025 \
       -d \
       simpledrupalcloud/mailcatcher:dev
       
