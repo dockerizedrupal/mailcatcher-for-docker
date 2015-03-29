@@ -1,5 +1,5 @@
 mailcatcher:
-  image: simpledrupalcloud/mailcatcher:dev
+  image: viljaste/mailcatcher:dev
   hostname: mailcatcher
   ports:
     - "80:80"

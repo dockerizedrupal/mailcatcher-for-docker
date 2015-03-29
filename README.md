@@ -12,7 +12,7 @@ Using the `docker` command:
       -p 80:80 \
       -p 25:25 \
       -d \
-      simpledrupalcloud/mailcatcher:dev
+      viljaste/mailcatcher:dev
       
 Using the `fig` command
 
@@ -28,7 +28,7 @@ Using the `fig` command
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
       && cd "${TMP}" \
       && git checkout dev \
-      && sudo docker build -t simpledrupalcloud/mailcatcher:dev . \
+      && sudo docker build -t viljaste/mailcatcher:dev . \
       && cd -
 
 ## License
