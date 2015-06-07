@@ -2,7 +2,7 @@ class mailcatcher {
   require mailcatcher::packages
   require mailcatcher::supervisor
 
-  exec { '/bin/bash -l -c "gem install mailcatcher -v 0.5.12"':
+  bash_exec { 'gem install mailcatcher -v 0.6.1':
     timeout => 0
   }
 }

@@ -14,17 +14,17 @@ Using the `docker` command:
       -d \
       viljaste/mailcatcher:latest
       
-Using the `fig` command
+Using the `docker-compose` command
 
     TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
+      && GIT_SSL_NO_VERIFY=true git clone https://git.beyondcloud.io/viljaste/docker-mailcatcher.git "${TMP}" \
       && cd "${TMP}" \
-      && sudo fig up
+      && sudo docker-compose up
 
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-mailcatcher.git "${TMP}" \
+      && GIT_SSL_NO_VERIFY=true git clone https://git.beyondcloud.io/viljaste/docker-mailcatcher.git "${TMP}" \
       && cd "${TMP}" \
       && sudo docker build -t viljaste/mailcatcher:latest . \
       && cd -
