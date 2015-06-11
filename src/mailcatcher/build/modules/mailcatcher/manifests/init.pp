@@ -1,4 +1,5 @@
 class mailcatcher {
+  require mailcatcher::nginx
   require mailcatcher::packages
   require mailcatcher::supervisor
 

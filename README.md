@@ -10,6 +10,7 @@ Using the `docker` command:
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -p 80:80 \
+      -p 443:443 \
       -p 25:25 \
       -d \
       viljaste/mailcatcher:latest
