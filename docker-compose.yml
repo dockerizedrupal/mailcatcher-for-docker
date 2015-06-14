@@ -6,4 +6,5 @@ mailcatcher:
     - "443:443"
     - "25:25"
   environment:
+    - SERVER_NAME=localhost
     - PROTOCOLS=https
