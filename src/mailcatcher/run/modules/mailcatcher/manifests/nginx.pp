@@ -1,4 +1,6 @@
 class mailcatcher::nginx {
+  include mailcatcher::nginx::timeout
+
   if $http and $https {
     if ! file_exists('/mailcatcher/ssl/certs/mailcatcher.crt') {
       require mailcatcher::nginx::ssl

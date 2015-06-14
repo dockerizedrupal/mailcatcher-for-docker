@@ -13,6 +13,7 @@ Using the `docker` command:
       -p 443:443 \
       -p 25:25 \
       -e SERVER_NAME="localhost" \
+      -e TIMEOUT="300" \
       -e PROTOCOLS="https" \
       -d \
       viljaste/mailcatcher:latest

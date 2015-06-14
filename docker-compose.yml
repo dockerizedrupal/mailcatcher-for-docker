@@ -7,4 +7,5 @@ mailcatcher:
     - "25:25"
   environment:
     - SERVER_NAME=localhost
+    - TIMEOUT=300
     - PROTOCOLS=https
