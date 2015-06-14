@@ -12,6 +12,7 @@ Using the `docker` command:
       -p 80:80 \
       -p 443:443 \
       -p 25:25 \
+      -e PROTOCOLS="https" \
       -d \
       viljaste/mailcatcher:latest
       
