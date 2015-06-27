@@ -14,7 +14,7 @@ Using the `docker` command:
       -p 25:25 \
       -e SERVER_NAME="localhost" \
       -e TIMEOUT="300" \
-      -e PROTOCOLS="https" \
+      -e PROTOCOLS="https,http" \
       -d \
       viljaste/mailcatcher:latest
       
