@@ -1,5 +1,5 @@
 mailcatcher:
-  image: viljaste/mailcatcher:latest
+  image: dockerizedrupal/mailcatcher:latest
   hostname: mailcatcher
   ports:
     - "80:80"
