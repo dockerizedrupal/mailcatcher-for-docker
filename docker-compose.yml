@@ -1,5 +1,5 @@
 mailcatcher:
-  image: dockerizedrupal/mailcatcher:1.0.2
+  image: dockerizedrupal/mailcatcher:1.0.3
   hostname: mailcatcher
   ports:
     - "80:80"
@@ -7,5 +7,6 @@ mailcatcher:
     - "25:25"
   environment:
     - SERVER_NAME=localhost
+    - TIMEZONE=Etc/UTC
     - TIMEOUT=300
     - PROTOCOLS=https,http

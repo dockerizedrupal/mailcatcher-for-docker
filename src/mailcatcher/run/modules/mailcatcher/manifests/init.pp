@@ -1,3 +1,4 @@
 class mailcatcher {
-  require mailcatcher::nginx
+  include mailcatcher::nginx
+  include mailcatcher::timezone
 }
