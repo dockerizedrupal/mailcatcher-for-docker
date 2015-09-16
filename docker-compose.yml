@@ -1,5 +1,5 @@
 mailcatcher:
-  image: dockerizedrupal/mailcatcher:1.0.4
+  image: dockerizedrupal/mailcatcher:1.0.5
   hostname: mailcatcher
   ports:
     - "80:80"
@@ -10,3 +10,5 @@ mailcatcher:
     - TIMEZONE=Etc/UTC
     - TIMEOUT=300
     - PROTOCOLS=https,http
+    - HTTP_BASIC_AUTH_USERNAME=container
+    - HTTP_BASIC_AUTH_PASSWORD=

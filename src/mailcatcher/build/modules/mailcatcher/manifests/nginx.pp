@@ -15,4 +15,6 @@ class mailcatcher::nginx {
     source => 'puppet:///modules/mailcatcher/etc/nginx/nginx.conf',
     mode => 644
   }
+
+  bash_exec { 'mkdir -p /etc/htpasswd': }
 }
