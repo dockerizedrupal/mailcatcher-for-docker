@@ -17,14 +17,14 @@ Using the `docker` command:
       -e TIMEOUT="300" \
       -e PROTOCOLS="https,http" \
       -d \
-      dockerizedrupal/mailcatcher:1.0.3
+      dockerizedrupal/mailcatcher:1.0.4
       
 Using the `docker-compose` command
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-mailcatcher.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.0.3 \
+      && git checkout 1.0.4 \
       && sudo docker-compose up
 
 ## Build the image
@@ -32,8 +32,8 @@ Using the `docker-compose` command
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-mailcatcher.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.0.3 \
-      && sudo docker build -t dockerizedrupal/mailcatcher:1.0.3 . \
+      && git checkout 1.0.4 \
+      && sudo docker build -t dockerizedrupal/mailcatcher:1.0.4 . \
       && cd -
 
 ## License

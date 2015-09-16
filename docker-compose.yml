@@ -1,5 +1,5 @@
 mailcatcher:
-  image: dockerizedrupal/mailcatcher:1.0.3
+  image: dockerizedrupal/mailcatcher:1.0.4
   hostname: mailcatcher
   ports:
     - "80:80"
