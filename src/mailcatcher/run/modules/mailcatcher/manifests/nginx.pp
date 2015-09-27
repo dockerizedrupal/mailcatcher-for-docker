@@ -1,7 +1,7 @@
 class mailcatcher::nginx {
   include mailcatcher::nginx::timeout
 
-  if $http_basic_auth_password {
+  if $http_basic_auth == "On" {
     include mailcatcher::nginx::http_basic_auth
   }
 

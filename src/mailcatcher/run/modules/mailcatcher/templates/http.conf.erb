@@ -2,7 +2,7 @@ server {
   listen 80 default_server;
 
   location / {
-<% if @http_basic_auth_password and !@http_basic_auth_password.empty? -%>
+<% if @http_basic_auth == "On" -%>
     auth_basic "Authentication Required";
     auth_basic_user_file "/etc/htpasswd/.htpasswd";
 <% end -%>
