@@ -1,6 +1,11 @@
 {
   "name": "docker-mailcatcher",
-  "version": "1.1.0",
+  "version": "1.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dockerizedrupal/docker-mailcatcher.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "grunt": "^0.4.5",
     "grunt-replace": "^0.11.0"
