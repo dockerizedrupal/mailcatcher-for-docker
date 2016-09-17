@@ -1,6 +1,4 @@
-> **Notice:** *This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.*
-
-# docker-mailcatcher
+# mailcatcher-for-docker
 
 A Docker image for [MailCatcher](http://mailcatcher.me/).
 
@@ -20,20 +18,16 @@ A Docker image for [MailCatcher](http://mailcatcher.me/).
       -e HTTP_BASIC_AUTH_USERNAME="container" \
       -e HTTP_BASIC_AUTH_PASSWORD="" \
       -d \
-      dockerizedrupal/mailcatcher:1.1.1
+      dockerizedrupal/mailcatcher:2.0.0
 
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && git clone https://github.com/dockerizedrupal/docker-mailcatcher.git "${TMP}" \
+      && git clone https://github.com/dockerizedrupal/mailcatcher-for-docker.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.1.1 \
-      && sudo docker build -t dockerizedrupal/mailcatcher:1.1.1 . \
+      && git checkout 2.0.0 \
+      && sudo docker build -t dockerizedrupal/mailcatcher:2.0.0 . \
       && cd -
-
-## Changing the container behaviour on runtime through environment variables
-
-    // TODO
 
 ## License
 

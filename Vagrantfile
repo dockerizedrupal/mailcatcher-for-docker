@@ -1,6 +1,4 @@
-VERSION = "1.1.1"
-
-require 'yaml'
+VERSION = "2.0.0"
 
 required_plugins = %w(vagrant-vbguest)
 
@@ -16,7 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "mailcatcher"
 
   config.vm.provider "virtualbox" do |v|
-    name = "dockerizedrupal-docker-mailcatcher-" + VERSION
+    name = "dockerizedrupal-mailcatcher-for-docker-" + VERSION
 
     name.gsub!(".", "-")
 
